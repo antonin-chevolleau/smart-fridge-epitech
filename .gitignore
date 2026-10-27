@@ -1,2 +1,2 @@
-# temporary files
-.tmp
+# macOS cache files
+.DS_Store
