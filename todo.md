@@ -8,7 +8,7 @@
 - [ ] Planifier le travail
 - [ ] Répartir le travail entre les membres du groupe
 
-### 1. Analyser le Gantt fourni (`docs/gantt.xlsx` — projet « Yes Connect »)
+### 1. Analyser le Gantt fourni (`docs/example_gantt.xlsx` — projet « Yes Connect »)
 
 #### Explorer le document
 
