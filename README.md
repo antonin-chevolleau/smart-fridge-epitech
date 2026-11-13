@@ -10,7 +10,9 @@ Une entreprise d'électroménager de taille moyenne voit ses marges sur les réf
 - si le projet a du **sens business**
 - s'il est **faisable** techniquement et opérationnellement
 
-➡️ Le sujet complet, traduit et condensé, est dans [`docs/projet.md`](docs/projet.md).
+➡️ Le sujet complet, traduit et condensé, est dans [`docs/project/project.fr.md`](docs/project/project.fr.md).
+
+📅 **Rendu** : dimanche 13/12/2026, soutenance la semaine suivante.
 
 ## 📦 Livrables
 
@@ -42,13 +44,20 @@ Règles de travail :
 
 ## 📁 Contenu du dépôt
 
-| Chemin                                             | Description                               |
-| -------------------------------------------------- | ----------------------------------------- |
-| [`docs/project.pdf`](docs/project/project.pdf)     | Sujet officiel Epitech (EN)               |
-| [`docs/project.fr.md`](docs/project/project.fr.md) | Sujet du projet, traduit et condensé (FR) |
+| Chemin                                                               | Description                                                  |
+| -------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [`docs/project/project.pdf`](docs/project/project.pdf)               | Sujet officiel Epitech (EN)                                  |
+| [`docs/project/project.fr.md`](docs/project/project.fr.md)           | Sujet du projet, traduit et condensé (FR)                    |
+| [`docs/planning/task-breakdown.md`](docs/planning/task-breakdown.md) | Découpage du travail de l'équipe en tâches                   |
+| [`docs/planning/estimation.md`](docs/planning/estimation.md)         | Estimation du temps de chaque tâche                          |
+| [`docs/planning/planning.md`](docs/planning/planning.md)             | Répartition des tâches, planning semaine par semaine, jalons |
+| [`bootstrap/`](bootstrap/)                                           | Exercice d'introduction au Gantt (sujet FR et PDF)           |
+| [`bootstrap/example-gantt.xlsx`](bootstrap/example-gantt.xlsx)       | Modèle Excel utilisé pour le diagramme de Gantt              |
+| [`.github/workflows/mirror.yml`](.github/workflows/mirror.yml)       | Copie automatique de `main` vers le dépôt Epitech            |
 
 ## 🚀 Avancement
 
+- [x] Organisation : découpage, estimation et planning (en attente de validation)
 - [ ] Phase 1 : cadrage (documents de cadrage, plan de recherche, feuille de route)
 - [ ] Phase 2 : PMP et documents de support
 - [ ] Communications interne et exécutive
