@@ -42,11 +42,10 @@ Règles de travail :
 
 ## 📁 Contenu du dépôt
 
-| Chemin                                                           | Description                                                 |
-| ---------------------------------------------------------------- | ----------------------------------------------------------- |
-| [`docs/projet.md`](docs/projet.md)                               | Sujet du projet, traduit et condensé (FR)                   |
-| [`docs/smart_fridge-project.pdf`](docs/smart_fridge-project.pdf) | Sujet officiel Epitech (EN)                                 |
-| [`todo.md`](todo.md)                                             | Liste des tâches du groupe                                  |
+| Chemin                                                           | Description                               |
+| ---------------------------------------------------------------- | ----------------------------------------- |
+| [`docs/projet.md`](docs/projet.md)                               | Sujet du projet, traduit et condensé (FR) |
+| [`docs/smart_fridge-project.pdf`](docs/smart_fridge-project.pdf) | Sujet officiel Epitech (EN)               |
 
 ## 🚀 Avancement
 
