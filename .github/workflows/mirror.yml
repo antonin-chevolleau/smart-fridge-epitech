@@ -1,0 +1,65 @@
+# .github/workflows/mirror.yml
+# Recopie la branche main de ce dépôt perso vers le dépôt officiel Epitech
+# à chaque push sur main (ou à la demande depuis l'onglet Actions).
+
+name: Miroir vers le dépôt Epitech
+
+on:
+  push:
+    branches: [main] # se déclenche seulement pour main
+  workflow_dispatch: # ajoute un bouton "Run workflow" pour relancer à la main
+
+# Si deux pushs arrivent coup sur coup, les miroirs s'exécutent l'un après l'autre
+# au lieu de se marcher dessus.
+concurrency:
+  group: mirror-epitech
+  cancel-in-progress: false
+
+# Le jeton automatique GITHUB_TOKEN n'a besoin que de lire CE dépôt.
+# L'écriture côté école passe par notre propre secret.
+permissions:
+  contents: read
+
+env:
+  # Dépôt officiel de l'école (destination du miroir)
+  TARGET_REPO: EpitechMscProPromo2029/T-CEN-500-PAR-5-1-smartFridgef-7
+
+jobs:
+  mirror:
+    # Ne s'exécute QUE depuis le dépôt perso. Ce fichier sera lui aussi copié
+    # dans le dépôt de l'école : cette condition l'empêche d'y tourner.
+    if: github.repository == 'antonin-chevolleau/smart-fridge-epitech'
+    runs-on: ubuntu-latest # machine Linux fournie gratuitement par GitHub
+    timeout-minutes: 5
+    steps:
+      # 1. Vérifie que le secret existe, pour avoir un message clair s'il manque
+      - name: Vérifier la présence du secret
+        env:
+          MIRROR_TOKEN: ${{ secrets.EPITECH_MIRROR_TOKEN }}
+        run: |
+          if [ -z "$MIRROR_TOKEN" ]; then
+            echo "::error::Le secret EPITECH_MIRROR_TOKEN est absent ou vide."
+            exit 1
+          fi
+
+      # 2. Clone le dépôt perso avec TOUT l'historique (fetch-depth: 0).
+      #    Sans ça, on n'aurait que le dernier commit et le push serait refusé.
+      #    persist-credentials: false : on n'enregistre pas le GITHUB_TOKEN
+      #    dans la config git, pour qu'il ne se mélange pas avec notre jeton.
+      - name: Récupérer le dépôt perso
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      # 3. Pousse le commit courant sur la branche main de l'école.
+      #    Push NORMAL (sans --force) : si l'école contient des commits que nous
+      #    n'avons pas, le push échoue au lieu de les effacer. C'est voulu.
+      - name: Pousser main vers le dépôt de l'école
+        env:
+          MIRROR_TOKEN: ${{ secrets.EPITECH_MIRROR_TOKEN }}
+        run: |
+          set -euo pipefail
+          git push "https://x-access-token:${MIRROR_TOKEN}@github.com/${TARGET_REPO}.git" \
+            HEAD:refs/heads/main
+          echo "Miroir OK : $(git rev-parse --short HEAD) poussé vers ${TARGET_REPO}"
