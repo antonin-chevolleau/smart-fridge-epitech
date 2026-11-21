@@ -51,6 +51,8 @@ Règles de travail :
 | [`docs/planning/task-breakdown.md`](docs/planning/task-breakdown.md) | Découpage du travail de l'équipe en tâches                   |
 | [`docs/planning/estimation.md`](docs/planning/estimation.md)         | Estimation du temps de chaque tâche                          |
 | [`docs/planning/planning.md`](docs/planning/planning.md)             | Répartition des tâches, planning semaine par semaine, jalons |
+| [`docs/planning/tasks.md`](docs/planning/tasks.md)                   | Suivi des tâches (cases à cocher à chaque fusion)            |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md)                                 | Conventions de branches, commits, PR et arborescence         |
 | [`bootstrap/`](bootstrap/)                                           | Exercice d'introduction au Gantt (sujet FR et PDF)           |
 | [`bootstrap/example-gantt.xlsx`](bootstrap/example-gantt.xlsx)       | Modèle Excel utilisé pour le diagramme de Gantt              |
 | [`.github/workflows/mirror.yml`](.github/workflows/mirror.yml)       | Copie automatique de `main` vers le dépôt Epitech            |

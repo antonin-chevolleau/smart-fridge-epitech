@@ -2,7 +2,8 @@
 
 > **Statut** : 🚧 en attente de validation par l'équipe.
 
-> Les tâches sont décrites dans [`task-breakdown.md`](task-breakdown.md) et estimées dans [`estimation.md`](estimation.md).
+> Les tâches sont décrites dans [`task-breakdown.md`](task-breakdown.md) et estimées dans
+> [`estimation.md`](estimation.md).
 
 ---
 
@@ -28,8 +29,10 @@
 
 - **Disponibilité** : environ 6 h par personne et par semaine, soit **≈ 72 h** pour l'équipe.
 - **Charge** : 66,5 h en réaliste (Must + Should).
-- **Marge** : il reste ≈ 5,5 h de capacité libre. Les tâches Should (7,5 h) servent de variable d'ajustement. Au total, la marge disponible est d'environ **13 h, soit ≈ 20 %**.
-- **Marge avant le rendu** : tout est terminé et relu le **vendredi 11/12**. Le week-end du 12-13/12 n'a aucune tâche prévue.
+- **Marge** : il reste ≈ 5,5 h de capacité libre. Les tâches Should (7,5 h) servent de variable d'ajustement.
+  Au total, la marge disponible est d'environ **13 h, soit ≈ 20 %**.
+- **Marge avant le rendu** : tout est terminé et relu le **vendredi 11/12**. Le week-end du 12-13/12 n'a
+  aucune tâche prévue.
 - **Réunion hebdomadaire** : en présentiel, en classe, jour à fixer en début de S1.
 
 ---
