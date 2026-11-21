@@ -1,6 +1,6 @@
 # 🧩 Découpage du projet en tâches
 
-> **Statut** : 🚧 en attente de validation par l'équipe.
+> **Statut** : ✅ validé par l'équipe.
 
 > Les estimations sont dans [`estimation.md`](estimation.md). La répartition (étape 4) viendra ensuite.
 

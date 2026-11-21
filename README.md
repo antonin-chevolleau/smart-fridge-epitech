@@ -59,7 +59,7 @@ Règles de travail :
 
 ## 🚀 Avancement
 
-- [x] Organisation : découpage, estimation et planning (en attente de validation)
+- [x] Organisation : découpage, estimation et planning (validés par l'équipe)
 - [ ] Phase 1 : cadrage (documents de cadrage, plan de recherche, feuille de route)
 - [ ] Phase 2 : PMP et documents de support
 - [ ] Communications interne et exécutive

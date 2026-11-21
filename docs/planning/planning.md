@@ -1,6 +1,6 @@
 # 📅 Planning de l'équipe
 
-> **Statut** : 🚧 en attente de validation par l'équipe.
+> **Statut** : ✅ validé par l'équipe.
 
 > Les tâches sont décrites dans [`task-breakdown.md`](task-breakdown.md) et estimées dans
 > [`estimation.md`](estimation.md).
