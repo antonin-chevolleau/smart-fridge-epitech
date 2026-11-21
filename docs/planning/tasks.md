@@ -8,7 +8,7 @@
 ## S1 · 16/11 → 22/11 · Cadrage
 
 - [x] **T01** Mise en place du dépôt et du suivi — Antonin · 🔴 · mar 17/11
-- [ ] **T02** Planning de l'équipe — Antonin · 🔴 · mar 17/11
+- [x] **T02** Planning de l'équipe — Antonin · 🔴 · mar 17/11
 - [ ] **T03** Pilotage hebdo — Antonin + tous · 🔴 · réunion hebdo (S1 à S4)
 - [ ] **T04** Préparation des suivis pédago — Xavier · 🟠 · veille de chaque suivi
 - [ ] **T05** Hypothèses sur l'entreprise et le produit — TK + tous · 🔴 · mar 17/11
